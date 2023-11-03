@@ -4,6 +4,7 @@ This script implements a Rock, Paper, Scissors game using the Pygame library.
 """
 import sys
 import subprocess
+import random
 
 def install_module(module_name):
     """
@@ -22,13 +23,6 @@ except ModuleNotFoundError:
     print("The 'pygame' module is not installed. Installing it now...")
     install_module("pygame")
     import pygame
-
-try:
-    import random
-except ModuleNotFoundError:
-    print("The 'random' module is not installed. Installing it now...")
-    install_module("random")
-    import random
 
 WIDTH, HEIGHT = 1250, 900
 WHITE = (255, 255, 255)
